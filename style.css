@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --maincolor-: rgb(48, 104, 134);
+
+  --textcolor-: black;
+
+  --textbg-: white;
+}
+
+body {
+  background-color: var(--maincolor-);
+}
+
+.firstscreen.hiden {
+  opacity: 0;
+  transition: 0.5s;
+}
+.welcome {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome p {
+  font-size: 7rem;
+  font-weight: 600;
+  padding: 3rem;
+  width: 80%;
+  text-align: center;
+  margin: 0 3rem;
+  letter-spacing: 0.2rem;
+  border-bottom: 0.3rem solid var(--textbg-);
+  border-top: 0.3rem solid var(--textbg-);
+  color: var(--textbg-);
+}
+/* .welcome span{
+  color: red;
+} */
+ .info
+{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 20px;
+  background-color: rgb(48, 45, 45,.5);
+  padding: 3px 8px;
+  border-radius: 5px;
+  color: azure;
+}
+
+ .info:hover
+{
+  font-size: 19px;
+ 
+}
+
+.playarea.show {
+  opacity: 1;
+}
+.playarea {
+  opacity: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 45px;
+  color: var(--textbg-);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.display {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 7px;
+  margin-bottom: 10px;
+
+  color: var(--textbg-);
+}
+.display-player {
+  color: red;
+  font-size: 30px;
+  font-weight: 900;
+}
+.hiden {
+  display: none;
+  transition: 0.3s;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+}
+
+.tile {
+  min-width: 110px;
+  min-height: 110px;
+  background-color: azure;
+  color: var(--maincolor-);
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 65px;
+  font-weight: 900;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 3px rgb(11, 11, 11,.5) ;
+}
+
+.announcer {
+  font-size: 20px;
+  font-weight: 300;
+
+}
+
+.controls
+{
+  margin: 20px;
+  margin-top: 25px;
+}
+.reset {
+ 
+  padding: 4px 20px;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 1px; 
+  border-radius: 6px;
+  color: var(--textbg-);
+  background: red;
+  font-weight: 200;
+  border: 1.5px solid black;
+}
+.reset:hover {
+ 
+  color: red;
+  background: white;
+  transition: .3s;
+  
+}
