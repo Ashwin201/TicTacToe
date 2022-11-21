@@ -36,8 +36,8 @@ body {
 .welcome p {
   font-size: 7rem;
   font-weight: 600;
-  padding: 3rem;
-  width: 80%;
+  padding: 3rem 0;
+  width: 100%;
   text-align: center;
   margin: 0 3rem;
   letter-spacing: 0.2rem;
